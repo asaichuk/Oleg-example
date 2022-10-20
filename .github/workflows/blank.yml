@@ -15,9 +15,8 @@ jobs:
         uses: Acunetix360/Acunetix-360-GitHub-Actions@v0.0.1
         id: acunetix-360-scan-step
         with:
-          website-id: '275f944f-912d-4e71-bfc4-ae920328c2d5'
+          website-id: 'cc579cc0d4b0497440a5ae990203f529'
           scan-type: 'Incremental'
-          profile-id: 'ec737177-0db4-412b-5dbf-af3102a20730'
           user-id: 'bf9ecb3ed09d4b07bbbaaf2e01b008d9'
           api-token: '/FjURf3PkqI9/DnxFrtj9i3k48+5sqcgHV/gDuZLHcE='
           base-url: 'https://online.acunetix360.com'
