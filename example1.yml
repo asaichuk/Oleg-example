@@ -1,0 +1,26 @@
+name: My_Test_Acu_Scan_1
+
+
+
+on:
+  push:
+     branches:
+       - main
+jobs:
+  acunetix_scan_job:
+     runs-on: ubuntu-20.04
+     steps:
+      # Starts actions with given inputs
+      - name: Start Acunetix 360 Scan
+        uses: Acunetix360/Acunetix-360-GitHub-Actions@v0.0.1
+        id: acunetix-360-scan-step
+        with:
+          website-id: '275f944f-912d-4e71-bfc4-ae920328c2d5'
+          scan-type: 'Incremental'
+          profile-id: 'ec737177-0db4-412b-5dbf-af3102a20730'
+          user-id: ${{ bf9ecb3ed09d4b07bbbaaf2e01b008d9 }}
+          api-token: ${{ /FjURf3PkqI9/DnxFrtj9i3k48+5sqcgHV/gDuZLHcE= }}
+          base-url: 'https://online.acunetix360.com'
+      # Displays output for action
+      - name: Display Scan Request Message
+        run: echo "${{ steps.acunetix-360-scan-step.outputs.scan-message }}"
