@@ -19,7 +19,7 @@ jobs:
           scan-type: 'Incremental'
           profile-id: 'ec737177-0db4-412b-5dbf-af3102a20730'
           user-id: 'bf9ecb3ed09d4b07bbbaaf2e01b008d9'
-          api-token: '/FjURf3PkqI9/DnxFrtj9i3k48+5sqcgHV/gDuZLHcE=
+          api-token: '/FjURf3PkqI9/DnxFrtj9i3k48+5sqcgHV/gDuZLHcE='
           base-url: 'https://online.acunetix360.com'
       # Displays output for action
       - name: Display Scan Request Message
